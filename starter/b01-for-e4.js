@@ -25,3 +25,11 @@
     - que se passe-t-il si vous avez déclaré i avec let ?
     - que se passe-t-il si vous déclarez i avec var ?
 */
+
+userTable = prompt("Je voudrais afficher les 10 premières valeurs de la table de multiplication par :");
+
+console.log("Voici les 10 premières valeurs de la table de multiplication par " + userTable);
+
+for (let i = 1; i<=10; i++) {
+    console.log(userTable + "*" + i + "=" + (userTable*i));
+}

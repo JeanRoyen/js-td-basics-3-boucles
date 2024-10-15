@@ -25,8 +25,11 @@ BONUS :
 - Après avoir quitté la boucle, affichez dans la console la chaîne complète saisie par l'utilisateur en concaténant les lettres.
 */
 
+let userEntry = ""
 
-
+while(userEntry !== "X") {
+    userEntry = prompt("Entrez une lettre ou X pour sortir");
+}
 
 
 // code avec le bonus

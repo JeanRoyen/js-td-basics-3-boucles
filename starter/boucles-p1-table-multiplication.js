@@ -18,3 +18,21 @@ N.B. Faites-le de deux manières différentes :
 // avec WHILE
 // Répétez le même processus avec une boucle WHILE, en demandant à nouveau la table de multiplication et le nombre de valeurs
 
+/*
+const userTable = prompt("Entrez votre table");
+let userValor = prompt("Entre votre valeur");
+
+for (let i = 1; userValor >= i; i++) {
+    console.log(i + "*" + userTable + "=" + userTable*i);
+}
+*/
+/*
+const userTable = prompt("Entrez votre table");
+let userValor = prompt("Entre votre valeur");
+let i = 1
+
+while(userValor >= i) {
+    console.log(i + "*" + userTable + "=" + userTable*i);
+    i++
+}
+*/
