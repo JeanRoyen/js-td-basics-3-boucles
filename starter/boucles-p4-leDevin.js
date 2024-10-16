@@ -19,3 +19,22 @@ Ecrivez un programme qui va deviner le nombre auquel vous avez pensé (voir livr
 	ces fonctions, y compris leurs paramètres et les valeurs qu'elles retournent.
 */
 // Écrivez le code JavaScript pour résoudre cet exercice en essayant de deviner le nombre auquel l'utilisateur pense.
+
+const nombreADeviner = parseInt(prompt("Pensez très fort à un nombre entier entre 1 et 10"));
+
+if (nombreADeviner) {
+    if (nombreADeviner >= 1 && nombreADeviner <= 10) {
+        for (let i = 1; i <= 10; i++) {
+            if (i === nombreADeviner) {
+                console.log(`Votre nombre est : ${i}`);
+                break;
+            } else {
+                console.log("C'est n'est pas " + i);
+            }
+        }
+    } else {
+        console.error("Le nombre n'est pas entre 1 et 10")
+    }
+} else {
+    console.error("Merci d'entrer un nombre");
+}
